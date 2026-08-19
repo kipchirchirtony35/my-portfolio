@@ -1,0 +1,248 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  :root {
+    --blue:       #0077cc;
+    --blue-dark:  #005fa3;
+    --orange:     #ff6600;
+    --bg:         #f0f4f8;
+    --white:      #ffffff;
+    --text:       #333333;
+    --gray:       #888888;
+    --border:     #cccccc;
+  }
+  
+  body {
+    font-family: 'Roboto', sans-serif;
+    background-color: var(--bg);
+    color: var(--text);
+    line-height: 1.6;
+  }
+  .navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 2rem;
+    background: #0077cc;
+    color: white;
+  }
+  
+  .navbar-items {
+    list-style: none;
+    display: flex;
+    gap: 1rem;
+  }
+  
+  .navbar-items a {
+    color: white;
+    text-decoration: none;
+    font-weight: 600;
+  }
+  
+  .navbar-items a:hover {
+    color: #ffcc00;
+  }
+  
+  
+  
+  main {
+    max-width: 580px;
+    margin: 48px auto;
+    padding: 0 16px;
+  }
+  
+  h1 {
+    font-family: 'Poppins', sans-serif;
+    font-size: 2rem;
+    color: var(--blue);
+    margin-bottom: 8px;
+  }
+  
+  .subtitle {
+    color: var(--gray);
+    margin-bottom: 28px;
+    font-size: 0.95rem;
+    }
+  
+  form {
+    background-color: var(--white);
+    border: 1px solid var(--border);
+    border-radius: 12px;
+    padding: 28px;
+  }
+  
+  fieldset {
+    border: 1px solid var(--border);
+    border-radius: 8px;
+    padding: 20px;
+    margin-bottom: 20px;
+  }
+  
+  legend {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+    font-size: 0.9rem;
+    color: var(--blue);
+    padding: 0 8px;
+  }
+  
+  label {
+    display: block;
+    font-size: 0.875rem;
+    font-weight: 600;
+    color: var(--text);
+    margin-top: 14px;
+    margin-bottom: 6px;
+  }
+  
+  fieldset label:first-of-type {
+    margin-top: 0;
+  }
+  
+  input[type="text"],
+  input[type="email"],
+  input[type="tel"],
+  select,
+  textarea {
+    width: 100%;
+    padding: 10px 12px;
+    border: 1px solid var(--border);
+    border-radius: 6px;
+    font-family: 'Roboto', sans-serif;
+    font-size: 0.95rem;
+    color: var(--text);
+    background-color: var(--white);
+  }
+  
+  input[type="text"]:focus,
+  input[type="email"]:focus,
+  input[type="tel"]:focus,
+  select:focus,
+  textarea:focus {
+    outline: none;
+    border-color: var(--blue);
+    box-shadow: 0 0 0 3px rgba(0, 119, 204, 0.15);
+  }
+  
+  textarea {
+    min-height: 120px;
+    resize: vertical;
+  }
+  
+  .checkbox-fieldset {
+    margin-bottom: 24px;
+  }
+  
+  .checkbox-label {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 10px;
+    margin-top: 10px;
+    margin-bottom: 0;
+    font-weight: 400;
+    cursor: pointer;
+  }
+  
+  input[type="checkbox"] {
+    width: 18px;
+    height: 18px;
+    flex-shrink: 0;
+    accent-color: var(--blue);
+    cursor: pointer;
+  }
+  
+  .checkbox-label span {
+    font-size: 0.9rem;
+  }
+  
+  button[type="submit"] {
+    display: block;
+    width: 100%;
+    padding: 13px;
+    background-color: var(--blue);
+    color: var(--white);
+    border: none;
+    border-radius: 8px;
+    font-family: 'Poppins', sans-serif;
+    font-size: 1rem;
+    font-weight: 600;
+    cursor: pointer;
+  }
+  
+  button[type="submit"]:hover {
+    background-color: var(--blue-dark);
+  }
+  
+  button[type="submit"]:active {
+    background-color: var(--orange);
+  }
+  
+  footer {
+    text-align: center;
+    padding: 24px;
+    color: var(--gray);
+    font-size: 0.875rem;
+  }
+  
+  @media (max-width: 600px) {
+    header {
+      flex-direction: column;
+      gap: 12px;
+      padding: 16px;
+    }
+  
+    nav ul {
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 12px;
+    }
+  
+    main {
+      margin: 28px auto;
+    }
+  
+    h1 {
+      font-size: 1.6rem;
+    }
+  
+    form {
+      padding: 20px 16px;
+    }
+  }
+
+  footer {
+    background: #0077cc;
+    color: #fff;
+    padding: 2rem 1rem;
+    text-align: center;
+  }
+  
+  .footer-columns {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    margin-bottom: 1rem;
+  }
+  
+  .footer-columns div {
+    margin: 0.5rem;
+  }
+  
+  @media (min-width: 768px) {
+    nav ul { display: flex; }
+    .hamburger { display: none; }
+    .projects { grid-template-columns: repeat(2, 1fr); }
+  }
+  
+  @media (min-width: 1024px) {
+    .projects { grid-template-columns: repeat(3, 1fr); }
+  }
+  
+  @media (min-width: 1280px) {
+    body { font-size: 1.1rem; }
+  }
+  

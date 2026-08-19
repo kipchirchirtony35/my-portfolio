@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact Me</title>
+  <link rel="stylesheet" href="../styles/contact.css">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&family=Roboto&display=swap" rel="stylesheet">
+</head>
+<body>
+
+  <header>
+    <nav class="navbar">
+      <div class="logo">Tony</div>
+      <ul class="navbar-items">
+        <li><a href="../index.html">Home</a></li>
+        <li><a href="about.html">About Me</a></li>
+        <li><a href="project.html">Projects</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+      
+    </nav>
+  </header>
+
+
+  <main>
+    <h1>Contact Me</h1>
+    <p class="subtitle">Fill out the form below and I'll get back to you soon!</p>
+
+    <form action="#" method="post">
+
+      <fieldset>
+        <legend>Personal Information</legend>
+
+        <label for="fullname">Full Name:</label>
+        <input type="text" id="fullname" name="fullname" placeholder="Enter your full name" required>
+
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" placeholder="yourname@gmail.com" required>
+
+        <label for="phone">Phone (optional):</label>
+        <input type="tel" id="phone" name="phone" placeholder="+254 70 567 8900">
+      </fieldset>
+
+      <fieldset>
+        <legend>Message Details</legend>
+
+        <label for="subject">Subject:</label>
+        <select id="subject" name="subject" required>
+          <option value="">Select a subject</option>
+          <option value="general">General Inquiry</option>
+          <option value="support">Support Request</option>
+          <option value="feedback">Feedback</option>
+        </select>
+
+        <label for="message">Message:</label>
+        <textarea id="message" name="message" placeholder="Write your message here (at least 50 characters)..." minlength="50" required></textarea>
+      </fieldset>
+
+      <fieldset class="checkbox-fieldset">
+        <legend>Preferences</legend>
+        <label class="checkbox-label">
+          <input type="checkbox" name="newsletter">
+          <span>Subscribe to newsletter</span>
+        </label>
+      </fieldset>
+
+      <button type="submit">Send Message</button>
+
+    </form>
+  </main>
+
+  <footer>
+    <div class="footer-columns">
+      <div><h3>About</h3><p>Frontend beginner building accessible sites.</p></div>
+      <div>
+        <h3>Links</h3><p><a href="../index.html">Home</a> 
+        <a href="../components/project.html">Projects</a></p></div>
+      <div>
+        <h3>Contact</h3>
+        <p>Email: kipchirchirtony35@gmail.com</p></div>
+    </div>
+    <p>© 2026 Tony</p>
+  </footer>
+</body>
+</html>
