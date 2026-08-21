@@ -54,6 +54,27 @@ body {
     box-shadow: 0 10px 20px rgba(0,0,0,0.1);
     transform: translateY(-2px);
   }
+
+  .card a {
+    display: inline-block;
+    margin-top: 0.75rem;
+    padding: 0.6rem 1.2rem;
+    background: #0077cc;
+    color: #fff;
+    text-decoration: none;
+    font-weight: 600;
+    border-radius: 6px;
+    transition: background 0.3s ease, transform 0.2s ease;
+  }
+  
+  .card a:hover {
+    background: #005fa3;
+    transform: translateY(-2px);
+  }
+  
+  .card a:active {
+    transform: translateY(0);
+  }
   
   footer {
     background: #0077cc;
