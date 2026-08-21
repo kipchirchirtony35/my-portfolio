@@ -3,6 +3,13 @@ body {
     margin: 0;
     line-height: 1.6;
   }
+
+  .logo img {
+    width: 3em;
+    height: auto;
+    border-radius: 50%; /* perfect circle */
+  }
+  
   
   .navbar {
     display: flex;

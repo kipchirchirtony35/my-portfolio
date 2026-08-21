@@ -21,6 +21,14 @@
     color: var(--text);
     line-height: 1.6;
   }
+
+  .logo img {
+    width: 3em;
+    height: auto;
+    border-radius: 50%; /* perfect circle */
+  }
+  
+
   .navbar {
     display: flex;
     justify-content: space-between;

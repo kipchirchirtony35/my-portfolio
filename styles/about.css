@@ -12,6 +12,13 @@
     background-color: #f9f9f9;
     
   }
+
+  .logo img {
+    width: 3em;
+    height: auto;
+    border-radius: 50%; /* perfect circle */
+  }
+  
   
   h1 {
       font-family: 'Poppins', sans-serif; 
@@ -70,12 +77,21 @@
   .hero-text { 
       flex: 1; 
   }
+
+  .hero-text a {
+    text-decoration: none;
+    
+  }
+  .hero-text p {
+    margin-bottom: 20px;
+  }
   
   .hero-image img {
     max-width: 100%;
     border-radius: 8px;
   }
   .button {
+    margin-top: 20px;
     background: #0077cc;
     color: #fff;
     padding: 10px 20px;
